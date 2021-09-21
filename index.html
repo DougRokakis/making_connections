@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="topbar">
+        <div class="container">
+            <div class="nav-left">
+                <h1>Profile</h1>
+                <ul class="nav-links">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">My Profile</a></li>
+                    <li><a href="">Find Connections</a></li>
+                </ul>
+            </div>
+            <button>Sign Out</button>
+        </div>
+    </div>
+    <div class="main container">
+        <div class="left-block">
+            <div class="ID-Card">
+                <!-- Blue bar -->
+                <div class="blue-bar">
+                    <!-- jane doe image -->
+                    <img src="./icons/user-circle.png" alt="empty picture of Jane Doe" class="jane-doe">
+                </div>
+                <div class="info-bottom">
+                    <h1 id="name">Jane Doe</h1>
+                    <div class="map">
+                        <img class="map-marker-icon" src="./icons/map-marker.png" alt="map marker">
+                        <h3>Seattle</h3>
+                    </div>
+                    <div class="blurb">
+                        <p>Developer | Engineer | Problem Solver</p>
+                        <p>Master of shadows and the Internet!</p>
+                    </div>
+                    <div class="edit">
+                        <img class="gear-icon" src="./icons/gear.png" alt="edit profile icon">
+                        <a onclick="updateProfile()" href="#">edit profile</a>
+                    </div>
+                </div>
+            </div>
+            <div class="education">
+                <!-- Gray Bar -->
+                <div class="gray-bar-1">
+                    <h3>Education</h3>
+                </div>
+                <!-- Text -->
+                <div class="descriptive-text">
+                    <h3>Coding Dojo - Full Stack Bootcamp</h3>
+                    <p>Dec 2019-March2020</p>
+                    <p>Triple Black Belt in Python, MERN and C#</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="right-block">
+            <div class="connection-requests">
+                <!-- Gray Bar -->
+                <div class="gray-bar-2">
+                    <button class="connection-requests-button"><span id="numRequestsConnections">2</span></button>
+                    <h3>Connection Requests</h3>
+                </div>
+                <!-- Text -->
+                <div class="connections-text">
+                    <div id="remove_name1"  class="photo-sizing">
+                        <img src="./images/todd-s.jpg" alt="Todd E">
+                        <p>Todd E</p>
+                        <img onclick="disappear(remove_name1) ; increaseLikes(); decreaseRequests()" src="./icons/accept-circle.png" alt="accept circle">
+                        <img onclick="disappear(remove_name1) ; increaseLikes(); decreaseRequests()" src="./icons/close-circle.png" alt="close circle">
+                    </div>
+                    <div id="remove_name2"  class="photo-sizing">
+                        <img src="./images/phil-s.jpg" alt="phil k">
+                        <p>Phil K</p>
+                        <img onclick="disappear(remove_name2) ; increaseLikes(); decreaseRequests()" src="./icons/accept-circle.png" alt="accept circle">
+                        <img onclick="disappear(remove_name2) ; increaseLikes(); decreaseRequests()" src="./icons/close-circle.png" alt="close circle">
+                    </div>
+
+                </div>
+            </div>
+            <div class="your-connections">
+                <div class="gray-bar-3">
+                    <button class="connection-requests-button"><span id="numLikesConnections">500+</span></button>
+                    <h3>Your Connections</h3>
+                </div>
+                <!-- Text -->
+                <div class="connections-text">
+                    <div class="photo-sizing">
+                        <img src="./images/adrien-s.jpg" alt="Adrien D">
+                        <p>Adrien D</p>
+                    </div>
+                    <div class="photo-sizing">
+                        <img src="./images/anne-s.jpg" alt="Anne J">
+                        <p>Anne J</p>
+                    </div>
+                    <div class="photo-sizing">
+                        <img src="./images/alayne-s.jpg" alt="Alayne J">
+                        <p>Alayne J</p>
+                    </div>
+                    <div class="photo-sizing">
+                        <img src="./images/arry-s.jpg" alt="Arry Y">
+                        <p>Arry Y</p>
+                    </div>
+                </div>
+                <!-- Text Footer -->
+                <div class="footer">
+                    <a href="www.linkedin.com">View More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

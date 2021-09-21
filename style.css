@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Oxygen';
+}
+
+.container{
+    display: flex;
+    justify-content:space-between;
+    width: 70%;
+    margin:0 auto;
+}
+
+.topbar{
+    background-color: black;
+    color: white;
+    padding: 20px 0px;
+    margin-bottom: 20px;
+}
+
+.nav-left{
+    display: flex;
+    align-items: center;
+}
+
+.nav-links{
+    display:flex;
+    gap: 2em;
+    list-style: none;
+}
+
+h1{
+    font-weight: lighter;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    padding-left: 30px;
+}
+
+button{
+    width: 8em;
+    height: 2em;
+    color:white;
+    background-color: steelblue;
+    font-weight: bolder;
+}
+
+.left-block{
+    flex:2;
+}
+
+.ID-Card{
+    outline: gray solid 2px;
+}
+
+.blue-bar{
+    background-color: dodgerblue;
+    position: relative;
+    width: 100%;
+    min-height: 50px;
+    padding-bottom: 50px;
+}
+
+.jane-doe{
+    width:100px;
+    position: absolute;
+    top: 50px;
+    left: 40px;
+}
+
+.info-bottom{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 50px 0px 20px 40px;
+}
+
+.map{
+    display:flex;
+    gap: 10px;
+}
+
+.map-marker-icon{
+    width: 20px;
+}
+
+.gear-icon{
+    width: 20px;
+}
+
+.right-block{
+    flex:1;
+    margin-left: 20px;
+}
+
+.gray-bar-1{
+    margin-top:40px;
+    background-color: black;
+    width: 100%;
+    min-height: 50px;
+    outline: gray solid 2px;
+    color:white;
+}
+
+.descriptive-text{
+    outline: gray solid 2px;
+    padding-bottom: 20px;
+    min-height: 100px;
+}
+
+.gray-bar-2{
+    width:100%;
+    min-height: 50px;
+    display:flex;
+    background-color: black;
+    outline: gray solid 2px;
+    margin-left: 20px;
+    color:white;
+    align-items: center;
+}
+
+.connection-requests-button{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin:10px 30px 10px;
+    background-color: gray;
+    color:white;
+}
+
+.connections-text{
+    width:100%;
+    min-height: 70px;
+    margin-left:20px;
+    outline: gray solid 2px;
+}
+
+.photo-sizing{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.photo-sizing img{
+    padding-left: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+.gray-bar-3{
+    width:100%;
+    min-height: 50px;
+    display:flex;
+    background-color: black;
+    outline: gray solid 2px;
+    margin-left: 20px;
+    color:white;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.footer{
+    width: 100%;
+    min-height: 30px;
+    padding-top: 5px;
+    margin-left: 20px;
+    margin-top: 10px;
+    outline: gray solid 2px;
+}
+
+.footer a{
+    padding-left: 20px;
+    text-decoration: none;
+}
